@@ -1,0 +1,27 @@
+package dev.cauegallizzi;
+
+import dev.cauegallizzi.generic.car.Car;
+import dev.cauegallizzi.generic.car.Civic;
+import dev.cauegallizzi.generic.car.Corolla;
+import dev.cauegallizzi.generic.car.Uno;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    static void main(String args[]) {
+        List<Car> cars = new ArrayList<>();
+        cars.add(new Civic());
+        cars.add(new Corolla());
+        cars.add(new Uno());
+        printCars(cars);
+    }
+
+    public static void printCars(List<? extends Car> cars) {
+        for (Car car : cars) {
+            System.out.println(car.carInfo());
+        }
+    }
+}
