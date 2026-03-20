@@ -1,4 +1,4 @@
-package dev.cauegallizzi.entity;
+package dev.cauegallizzi.domain;
 
 import java.util.Objects;
 

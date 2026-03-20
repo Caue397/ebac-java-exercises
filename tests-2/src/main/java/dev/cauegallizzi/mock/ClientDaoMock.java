@@ -1,7 +1,7 @@
 package dev.cauegallizzi.mock;
 
 import dev.cauegallizzi.dao.IClientDao;
-import dev.cauegallizzi.entity.Client;
+import dev.cauegallizzi.domain.Client;
 
 public class ClientDaoMock implements IClientDao {
 

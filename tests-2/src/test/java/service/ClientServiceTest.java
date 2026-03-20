@@ -1,7 +1,7 @@
 package service;
 
 import dev.cauegallizzi.dao.IClientDao;
-import dev.cauegallizzi.entity.Client;
+import dev.cauegallizzi.domain.Client;
 import dev.cauegallizzi.mock.ClientDaoMock;
 import dev.cauegallizzi.service.ClientService;
 import org.junit.Assert;

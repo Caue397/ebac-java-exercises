@@ -1,6 +1,6 @@
 package dev.cauegallizzi.dao;
 
-import dev.cauegallizzi.entity.Client;
+import dev.cauegallizzi.domain.Client;
 
 public class ClientDao implements IClientDao {
 
