@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+
+    <persistence-unit name="advanced-jpa" transaction-type="RESOURCE_LOCAL">
+
+        <class>dev.cauegallizzi.domain.Car</class>
+        <class>dev.cauegallizzi.domain.Brand</class>
+        <class>dev.cauegallizzi.domain.Accessory</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver"   value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url"      value="jdbc:postgresql://localhost:5432/advanced-jpa"/>
+            <property name="jakarta.persistence.jdbc.user"     value="admin"/>
+            <property name="jakarta.persistence.jdbc.password" value="admin"/>
+
+            <!-- Hibernate específico -->
+            <property name="hibernate.dialect"                 value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto"           value="update"/>
+            <property name="hibernate.show_sql"               value="true"/>
+            <property name="hibernate.format_sql"             value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
